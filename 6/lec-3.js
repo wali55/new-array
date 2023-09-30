@@ -27,5 +27,16 @@ const students = [
 
 const dueTuition = students.filter((student) => student.due === true);
 
-dueTuition.map((student) => console.log(`Hello, ${student.name}. Your tuition is still due. Please p`));
+/*
+dueTuition.map((student) => console.log(`Hello, ${student.name}. Your tuition is still due. Your due amount is ${student.dueAmount}. Please pay the fee before the final exam. Thank you.`));
+
+console.log(lowGpa);
+*/
+
+const lowGpa = students.filter((student) => student.gpa < 3);
+
+lowGpa.map((student) => console.log(`${student.name}, your gpa is low. Please try to do better next time. All the best.`));
+
+
+
 
